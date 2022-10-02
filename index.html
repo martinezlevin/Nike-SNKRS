@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike AR | SNKRS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logo.png" alt="logo Nike">
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Carrito</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/1.webp" alt="foto zapatilla Nike">
+                    <p>$<span>400.00</span></p>
+                </div>
+                <p class="title">AIR JORDAN 1 HIGH OG</p>
+                <a href="#" class="btn-add-cart" data-id="1">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/2.webp" alt="foto zapatilla Nike">
+                    <p>$<span>700.00</span></p>
+                </div>
+                <p class="title">NIKE AIR ZOOM G.T. JUMP</p>
+                <a href="#" class="btn-add-cart" data-id="2">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/3.webp" alt="foto zapatilla Nike">
+                    <p>$<span>500.00</span></p>
+                </div>
+                <p class="title">AIR FORCE 1 '07 "UNO"</p>
+                <a href="#" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/4.webp" alt="foto zapatilla Nike">
+                    <p>$<span>600.00</span></p>
+                </div>
+                <p class="title">JORDAN SERIES SE RUI</p>
+                <a href="#" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/5.webp" alt="foto zapatilla Nike">
+                    <p>$<span>400.00</span></p>
+                </div>
+                <p class="title">SB DUNK HIGH PRO QS</p>
+                <a href="#" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/6.webp" alt="foto zapatilla Nike">
+                    <p>$<span>600.00</span></p>
+                </div>
+                <p class="title">W AIR JORDAN 3 RETRO</p>
+                <a href="#" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/7.webp" alt="foto zapatilla Nike">
+                    <p>$<span>699.99</span></p>
+                </div>
+                <p class="title">LEBRON XIX</p>
+                <a href="#" data-id="7" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/8.webp" alt="foto zapatilla Nike">
+                    <p>$<span>999.99</span></p>
+                </div>
+                <p class="title">ZOOM LEBRON III QS</p>
+                <a href="#" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Guillermo Martinez 2022 (practice to CoderHouse)</p></div>
+    </footer>
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="main.js" ></script>
+</body>
+</html>
