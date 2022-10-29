@@ -39,8 +39,8 @@ header{
     line-height: 18px;
 }
 .logo{
-    width: 164px;
-    height: 84px;
+    width: 100px;
+    height: auto;
     cursor: pointer;
 }
 

@@ -104,3 +104,36 @@ function loadHtml(){
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
+
+
+ //local Storage
+
+obtain_localStorage();
+
+
+ function obtain_localStorage(){
+
+    let sneakers = localStorage.getItem( "sneakers" );
+    let shipping = JSON.parse( localStorage.getItem( "shipping" ));
+
+    console.log ( "sneakers" );
+    console.log ( shipping );
+ };
+
+ 
+ save_localStorage();
+
+ function save_localStorage(){
+
+    let sneakers = {
+        model: "air_jordan_1_high_OG",
+        size: 43
+    };
+
+    let shipping = "Envio";
+ 
+
+
+localStorage.setItem( "shipping", JSON.stringify( sneakers ) );
+
+}
