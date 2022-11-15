@@ -137,3 +137,14 @@ obtain_localStorage();
 localStorage.setItem( "shipping", JSON.stringify( sneakers ) );
 
 }
+
+
+//FETCH
+
+const link = "https://jsonplaceholder.typicode.com/users"
+
+fetch (link)
+    .then(answer => answer.json())
+    .then(data => {console.log(data)})
+
+
